@@ -18,7 +18,7 @@ fs.readdir("./cmds/", (err, files) => {
     jsfiles.forEach((f, i) => {
         let props = require(`./cmds/${f}`);
         console.log(`${i + 1}: ${f} loaded!`);
-        bot.commands.set(props.help);
+        bot.commands.set(props.help.name, props);
 
     });
 
