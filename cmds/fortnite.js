@@ -1,5 +1,5 @@
 const Fortnite = require('fortnite');
-const stats = new Fortnite("https://api.fortnitetracker.com/v1/profile/{platform}/{epic-nickname}");
+const stats = new Fortnite("https://api.fortnitetracker.com/v1/profile/{platform}/{epic-nickname}!");
 const Discord = require('discord.js');
 
 exports.run = (client, message, args, tools) => {
@@ -35,4 +35,4 @@ exports.run = (client, message, args, tools) => {
 
                         })
 
-                })}
+                }
