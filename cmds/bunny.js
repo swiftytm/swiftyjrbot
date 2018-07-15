@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const request = require("request");
 
-module.exports.run = async (bot,message,args,level) => { // eslint-disable-line no-unused-vars
+exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
   let imgs = Math.floor(Math.random() * 80);
   let url = ['https://www.reddit.com/r/Rabbits/.json?sort=rising&t=hour&limit=100'];
   request({
@@ -40,6 +40,9 @@ exports.conf = {
   permLevel: "User"
 };
 
-module.exports.help = {
-  name: "bunny"
+exports.help = {
+  name: "bunny",
+  category: "Miscelaneous",
+  description: "Jumpy I go",
+  usage: "bunny"
 };
